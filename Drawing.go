@@ -80,7 +80,7 @@ func (d *Drawing) AddLineType(name string, description string, elements ...float
 }
 
 // Add DXF12 Layer to the drawing palette
-func (d *Drawing) AddLayer(name string, colourNumber int64, lineTypeName string, lineWeight int64) {
+func (d *Drawing) AddLayer(name string, colourNumber int64, lineTypeName string, lineWeight int64) *Layer {
 
 	d.Layers = append(d.Layers, Layer{
 		Name:         name,
@@ -89,6 +89,7 @@ func (d *Drawing) AddLayer(name string, colourNumber int64, lineTypeName string,
 		LineWeight:   lineWeight,
 	})
 
+	return d.Layer(name)
 }
 
 func (d *Drawing) Layer(name string) *Layer {
@@ -99,7 +100,7 @@ func (d *Drawing) Layer(name string) *Layer {
 		}
 	}
 
-	// throw exception instead
+	// TODO throw exception instead
 	return &d.Layers[0]
 }
 
