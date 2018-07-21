@@ -2,6 +2,22 @@
 
 A feather light implementation of DXF12 building in Go. Targets AutoCAD. 
 
+**Contents**
+- [Dxfeather](#dxfeather)
+  - [Usage](#usage)
+    - [Setting DXF File Comment](#setting-dxf-file-comment)
+    - [Adding LineTypes](#adding-linetypes)
+    - [Adding Layers](#adding-layers)
+    - [Adding Shapes to Layers](#adding-shapes-to-layers)
+    - [Adding Blocks & Adding Shapes to Blocks](#adding-blocks-adding-shapes-to-blocks)
+    - [Availiable Shapes](#availiable-shapes)
+    - [Rendering to DXF Format](#rendering-to-dxf-format)
+  - [Special Thanks To](#special-thanks-to)
+  - [Contributing](#contributing)
+  - [Authors](#authors)
+  - [License](#license)
+
+
 ## Usage
 
 Dxfeather will allow you to build DXF12 versioned DXF files from scratch using Go.
