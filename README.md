@@ -1,6 +1,6 @@
 # Dxfeather
 
-A feather light implementation of DXF12 building in Go. Targets AutoCAD. 
+A feather light implementation of DXF12 building in Go. Targets AutoCAD. The library aims to be as lightweight as possible, feature-creep must be avoided.
 
 **Contents**
 - [Dxfeather](#dxfeather)
