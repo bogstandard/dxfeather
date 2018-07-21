@@ -55,7 +55,7 @@ The `Layer(name)` function will return the instance of the existing Layer by tha
 
 These can be chained for convienence.
 
-Alternativly you can always append directly to the Layer's `Shapes` array.
+Alternatively you can always append directly to the Layer's `Shapes` array.
 
 ```
 d.Layer("baseLayer").AddShape(dxfeather.Insert{
@@ -102,7 +102,7 @@ Using the helper function you are able to immediately Add Shapes to the block.
 
 `Block(name)` will return an existing Block instance by that name or create & return a new Block instance by that name.
 
-Alternativly you can append shapes directly to the Block's `Shapes` array.
+Alternatively you can append shapes directly to the Block's `Shapes` array.
 
 Like `Layer.AddShape(..)` these can also be chained.
 
