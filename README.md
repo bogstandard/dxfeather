@@ -12,7 +12,7 @@ To initialise a new drawing perform create a new `dxfeather.Drawing` instance.
 var d = new(dxfeather.Drawing)
 ```
 
-### Comment
+### Setting DXF File Comment
 
 ```
 d.Comment = "Hello, World!"
@@ -134,6 +134,15 @@ The following shapes are availiable for use. Please refer to the official [DXF12
 - Polyline
 - Solid
 - Text
+
+### Rendering to DXF Format
+
+The `Drawing.ToDxfString()` function will return the rendered DXF file as a string. It's up to you what you do with it from there.
+
+```
+// print DXF file to terminal
+fmt.Printf("%s", d.ToDxfString())
+```
 
 
 ## Special Thanks To
