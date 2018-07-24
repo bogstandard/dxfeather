@@ -28,32 +28,26 @@ func cleanString(value string) string {
 	return value
 }
 
-func renderShape(v interface{}) string {
+func renderShape(s interface{}) string {
 
 	var res string
 
-	if _, ok := v.(Arc); ok {
-		res += v.(Arc).toDxfString()
+	switch s.(type) {
+	case Arc:
+		res += s.(Arc).toDxfString()
+	case Circle:
+		res += s.(Circle).toDxfString()
+	case Insert:
+		res += s.(Insert).toDxfString()
+	case Line:
+		res += s.(Line).toDxfString()
+	case Polyline:
+		res += s.(Polyline).toDxfString()
+	case Solid:
+		res += s.(Solid).toDxfString()
+	case Text:
+		res += s.(Text).toDxfString()
 	}
-	if _, ok := v.(Circle); ok {
-		res += v.(Circle).toDxfString()
-	}
-	if _, ok := v.(Insert); ok {
-		res += v.(Insert).toDxfString()
-	}
-	if _, ok := v.(Line); ok {
-		res += v.(Line).toDxfString()
-	}
-	if _, ok := v.(Polyline); ok {
-		res += v.(Polyline).toDxfString()
-	}
-	if _, ok := v.(Solid); ok {
-		res += v.(Solid).toDxfString()
-	}
-	if _, ok := v.(Text); ok {
-		res += v.(Text).toDxfString()
-	}
-
 	return res
 
 }
