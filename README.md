@@ -9,7 +9,7 @@ A feather light implementation of DXF12 building in Go. Targets AutoCAD. The lib
     - [Adding LineTypes](#adding-linetypes)
     - [Adding Layers](#adding-layers)
     - [Adding Shapes to Layers](#adding-shapes-to-layers)
-    - [Adding Blocks & Adding Shapes to Blocks](#adding-blocks-adding-shapes-to-blocks)
+    - [Adding Blocks & Adding Shapes to Blocks](#adding-blocks--adding-shapes-to-blocks)
     - [Availiable Shapes](#availiable-shapes)
     - [Rendering to DXF Format](#rendering-to-dxf-format)
   - [Special Thanks To](#special-thanks-to)
@@ -141,7 +141,7 @@ End with an example of getting some data out of the system or using it for a lit
 
 ### Availiable Shapes
 
-The following shapes are availiable for use. Please refer to the official [DXF12 documentation](https://www.autodesk.com/techpubs/autocad/dxf/reference/) for greater details.
+The following shapes are availiable for use. Please refer to the official [DXF12 documentation](https://www.autodesk.com/techpubs/autocad/dxf/reference/) ([alternate link](https://images.autodesk.com/adsk/files/autocad_2012_pdf_dxf-reference_enu.pdf)) for greater details.
 
 - Arc
 - Circle
